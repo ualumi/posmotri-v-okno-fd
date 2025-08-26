@@ -96,7 +96,7 @@ ol {
   padding-top: 2px;
 }
 
-.content__list-item {
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
   cursor: pointer;
 }
@@ -202,6 +202,10 @@ input[type='checkbox']:checked + span {
   text-decoration: underline;
 }
 
+.more-button {
+  margin-top: 30px;
+}
+
 .search-form__label .search-form__textfield {
   background-color: transparent;
   border: none;
@@ -283,9 +287,9 @@ input[type='checkbox']:checked + span {
 
 .content__video-card-thumbnail {
   height: 103px;
-  min-width: 194px;
+  width: 194px;
   object-position: center;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .title {
