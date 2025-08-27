@@ -141,17 +141,10 @@ ol {
   height: 100%;
 }
 
-/*.search-form__fieldset:nth-child(2n):not(.search-form__fieldset-title) {
-  flex: 1;
-  align-items: start;
-  flex-direction: row;
-}*/
-
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  /*padding-bottom: 8px;*/
   align-items: center;
 }
 
@@ -275,6 +268,12 @@ input[type='checkbox']:checked + span {
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .content__video-card-description {
