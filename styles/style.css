@@ -105,9 +105,8 @@ ol {
   text-decoration: underline;
 }
 
-.content__card-link:focus-visible {
-  border: 1px solid #fff;
-  border-radius: 0px;
+.content__card-link:focus{
+  outline: none;
 }
 
 .content__card-link:active {
@@ -120,6 +119,10 @@ ol {
   display: block;
 }
 
+.content__card-link:focus-visible {
+  display: block;
+  outline: 1px solid #fff;
+}
 
 .search-form {
   display: flex;
@@ -199,7 +202,7 @@ input[type='checkbox']:checked + span {
   margin-top: 30px;
 }
 
-.search-form__label .search-form__textfield {
+.search-form__textfield {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -223,11 +226,17 @@ input[type='checkbox']:checked + span {
   outline-offset: 1px;
 } /* одинаковые состояния для кнопок и формы поиска*/
 
+.search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .search-form__label:hover {
   cursor: pointer;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
